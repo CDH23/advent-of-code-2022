@@ -15,11 +15,8 @@ fun main() {
     val texts = readDay(2)
 
     var score = 0
-
-
     texts.forEach {
         val (_opponent, _me) = it.split(" ")
-
 
         val opponent = when (_opponent) {
             "A" -> 0
@@ -42,7 +39,7 @@ fun main() {
     println(score)
 }
 
-fun figureOutMySelf(opponent: Int, _me: String): Int {
+private fun figureOutMySelf(opponent: Int, _me: String): Int {
     return if (part2) {
         when (_me) {
             "X" -> loseMap[opponent]
