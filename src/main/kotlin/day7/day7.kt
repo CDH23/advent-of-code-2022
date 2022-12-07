@@ -1,9 +1,6 @@
 package day7
 
 import common.readDay
-import day6.Directory
-import day6.File
-import day6.FileSystem
 import java.util.*
 
 

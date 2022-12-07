@@ -15,9 +15,6 @@ fun main() {
         }
 
 
-
-
-
     println(texts.sumOf { a2z.indexOf(it) + 1 })
 
     // part 2

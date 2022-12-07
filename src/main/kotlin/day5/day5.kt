@@ -15,9 +15,7 @@ fun main() {
     val stackLayout = texts.take(beforeEmptyIndex)
     val instructions = texts.drop(beforeEmptyIndex + 1)
 
-
     val stacks = Array(stackLayout.last().last().digitToInt()) { Stack<Char>() }
-
 
     stackLayout
         .dropLast(1)

@@ -9,7 +9,6 @@ fun main() {
     val texts = readDay(4, test)
         .map {
             val (first, second) = it.split(",")
-
             val (f1, s1) = first.split("-")
             val (f2, s2) = second.split("-")
 
@@ -22,7 +21,6 @@ fun main() {
         texts
             .map {
                 val (first, second) = it
-
                 first.all(second::contains) || second.all(first::contains)
             }
             .count { it }
@@ -33,7 +31,6 @@ fun main() {
         texts
             .map {
                 val (first, second) = it
-
                 first.any(second::contains) || second.any(first::contains)
             }
             .count { it }

@@ -1,7 +1,6 @@
-package day6
+package day7
 
 sealed interface FileSystem
-
 
 class Directory : FileSystem {
     val content = hashMapOf<String, FileSystem>()
